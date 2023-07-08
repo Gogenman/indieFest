@@ -1,0 +1,55 @@
+@import '../../vars.scss';
+
+
+.left {
+    z-index: 10;
+    height: 100vh;
+    background: rgba(96, 96, 96, 0.44);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 40%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    transition: all .25s linear;
+}.left:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+
+.title {
+    font-family: 'Soledago';
+    background: linear-gradient(55deg, $yellow 24%, $white 76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    line-height: .9;
+    margin-top: 10vh;
+}
+
+.descr {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.left_container {
+    // width: 500px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.left_inner {
+    max-width: 500px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.btns_group {
+    margin-top: 40px;
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+}
