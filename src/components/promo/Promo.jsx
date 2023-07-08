@@ -4,12 +4,12 @@ import PromoLeft from '../promoLeft/PromoLeft';
 
 import PromoRight from '../promoRight/PromoRight';
 
-const Promo = () => {
+const Promo = ({cards, setActive}) => {
     return ( 
         <div className={style.promo}>
             <PromoLeft />
 
-            <PromoRight />
+            <PromoRight setActive={setActive} cards={cards}/>
         </div>
     );
 }

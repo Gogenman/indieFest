@@ -1,0 +1,111 @@
+@import '../../vars.scss'; 
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.content {
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    overflow: hidden;
+    background: rgba(96, 96, 96, 0.44);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 50vh;
+    width: 50vw;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all .3s ease-in-out;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.content.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.left {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    img {
+        position: absolute;
+        left: -50%;
+        height: 100%;
+
+    }
+}
+
+.right_header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ffffff6b;
+}
+
+.title {
+    font-family: Soledago;
+    color: $yellow;
+    font-size: 40px;
+}
+
+.closeBtn {
+    font-size: 40px;
+    color: $white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: $yellow;
+    }
+}
+
+.right {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    // justify-content: flex-start;
+
+    flex-direction: column;
+}
+
+.descr {
+    padding: 30px;
+    margin-top: 30px;
+    color: $white;
+    font-size: 20px;
+}
+
+.btns {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+}
