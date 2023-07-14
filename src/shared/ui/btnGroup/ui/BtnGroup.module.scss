@@ -1,0 +1,11 @@
+.btns_group {
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 900px) {
+    .btns_group {
+        width: 380px;
+    }
+}

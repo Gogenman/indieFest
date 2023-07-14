@@ -1,0 +1,20 @@
+.btn {
+    width: 200px;
+    padding: 10px 0;
+    background: transparent;
+    border: 2px solid var(--font-white);
+    border-radius: 10px;
+    color: var(--font-white);
+    font-size: 20px;
+    transition: all .2s linear;
+    cursor: pointer;
+}.btn:hover {
+    color: var(--font-yellow);
+    background: var(--font-white);
+}
+
+@media screen and (min-width: 900px) {
+    .btn {
+        width: 180px;
+    }
+}

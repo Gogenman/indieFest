@@ -1,0 +1,11 @@
+.gridSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+@media screen and (min-width: 900px) {
+    .gridSection {
+        grid-gap: 15px;
+    }
+}
