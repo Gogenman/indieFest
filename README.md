@@ -7,7 +7,7 @@ This is a front-end project for Indie Fest, an event dedicated to independent ar
 To run the Indie Fest frontend project locally, follow these steps:
 
 1. Clone the repository:
-```git clone https://github.com/your-username/indie-fest.git``` 
+```git clone https://github.com/Gogenman/indieFest.git``` 
 2. Install dependencies:
 ```npm install``` 
 3. Start the development server: 
